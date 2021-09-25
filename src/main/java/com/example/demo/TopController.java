@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TopController {
 	@RequestMapping(value="/top")
 	private String index(){
-		return "/index.html";
+		return "/top.html";
 	}
 }
