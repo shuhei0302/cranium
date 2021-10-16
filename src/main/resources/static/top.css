@@ -5,22 +5,53 @@ main {
 }
 
 .icon-container {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* left SVG Style */
+.icon-container :first-child {
+	transition: 0.5s;
 }
 
+.icon-container:hover :first-child {
+	opacity: 0.5;
+	transform-origin: center center 0;
+	transform: rotate(60deg) translate(-15px, 0);
+	transition: 0.25s;
+}
+
+/* right SVG style */
+.icon-container :last-child {
+	transition: 0.5s;
+}
+
+.icon-container:hover :last-child {
+	opacity: 0.5;
+	transform-origin: center center 0;
+	transform: rotate(60deg) translate(15px,0);
+	transition: 0.25s;
+}
+	
+/* font style */
 .logo-type{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	font-family: "Shadows Into Light";
 	font-weight: normal;
 	font-size: 40px;
 	text-align: center;
 	color: #fff;
-	margin: initial;
 }
 
-/* index用 */
+.icon-container:hover + .logo-type {
+	opacity: 0.5;
+	transition: 0.25s;
+}
 
+.icon-container + .logo-type {
+	transition: 0.5s;
+}

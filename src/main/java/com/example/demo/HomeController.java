@@ -4,9 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class TopController {
-	@RequestMapping(value="/")
-	private String index(){
-		return "/top.html";
-	}
+public class HomeController {
+
 }
