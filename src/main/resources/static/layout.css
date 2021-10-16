@@ -2,12 +2,20 @@ html{
 	color: black;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: inherit;
+  }
+
 header{
 	width: 320px;
 	height: 100vh;
-	background-color: red;
 	float: left;
 	position: fixed;
+	border: solid 1px red;
 }
 
 #logo{
@@ -17,25 +25,18 @@ header{
 
 }
 
-body main{
-	width: 100%;
-	height:1000px;
-	background-color: blue;
-}
-
-#main-Wrapper{
-	width: calc(100% - 320px);
-	position: absolute;
-	left: 320px;
-}
-
 #gnav{
 	font-family: Oswald;
 	font-weight: 300;
 	font-size: 17px;
 	position: absolute;
 	top: 186px;
-	left: 167px;
+	left: 147px;
+}
+
+ul{
+	margin: initial;
+	padding: initial;
 }
 
 li{
@@ -43,7 +44,47 @@ li{
 	margin-bottom: 20px;
 }
 
-ul{
-	margin: initial;
-	padding: initial;
+#gnav ul li{
+	transition: 0.25s ease-in-out;
+}
+
+#gnav ul li:hover{
+	transform: translateX(10px);
+}
+
+#gnav ul li::before{
+	content: url("./arrow.svg");
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+	margin-right: 10px;
+}
+
+#gnav ul li:hover::before{
+	opacity: 1;
+}
+
+#copyrights{
+	font-family: Oswald;
+	font-weight: 100;
+	font-size: 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    transform: translateX(-50%) rotate(90deg);
+    transform-origin: center 100%;
+    line-height: 1;
+	opacity: 0.3;
+}
+
+body main{
+	width: 100%;
+	height:1000px;
+	border: solid 1px green;
+}
+
+#main-Wrapper{
+	width: calc(100% - 320px);
+	position: absolute;
+	left: 320px;
+	border: solid 1px blue;
 }
