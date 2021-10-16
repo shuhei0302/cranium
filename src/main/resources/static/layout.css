@@ -1,5 +1,6 @@
 html{
 	color: black;
+	background-color: #fff;
 }
 
 a{
@@ -8,14 +9,18 @@ a{
 
 a:visited{
 	color: inherit;
-  }
+}
+
+p{
+	margin: initial;
+}
 
 header{
 	width: 320px;
 	height: 100vh;
 	float: left;
 	position: fixed;
-	border: solid 1px red;
+	/* border: solid 1px red; */
 }
 
 #logo{
@@ -78,13 +83,74 @@ li{
 
 body main{
 	width: 100%;
-	height:1000px;
-	border: solid 1px green;
+	height:2000px;
+	/* border: solid 1px green; */
 }
 
 #main-Wrapper{
 	width: calc(100% - 320px);
 	position: absolute;
 	left: 320px;
-	border: solid 1px blue;
+	/* border: solid 1px blue; */
+}
+
+.main-visual__title{
+	display: flex;
+	position: relative;
+	top: 231px;
+	left: 80px;
+}
+
+h1{
+	margin: initial;
+	padding: initial;
+	font-family: "Oswald";
+	font-weight: 100;
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	color: #e8e8e8;
+}
+
+h1::after{
+	content:'New things';
+	font-family: "Shadows Into Light";
+	font-weight: 100;
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	left: -50%;
+	color: #000;
+}
+
+.number{
+	font-family: Oswald;
+	font-weight: 100;
+	font-size: 21px;
+}
+
+.date{
+	font-family: Oswald;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.project-information{
+	font-family: Oswald;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.project--info .date{
+	margin-bottom: 3px;
+}
+
+.main-visual__project{
+	position: relative;
+	top: 250px;
+	left: 290px;
+}
+
+.main-visual__img{
+	margin-top: 10px;
 }
