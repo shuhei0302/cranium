@@ -10,12 +10,14 @@ main {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 /* left SVG Style */
 .icon-container :first-child {
 	transition: 0.5s;
 }
 
 .icon-container:hover :first-child {
+	pointer-events: none;
 	opacity: 0.5;
 	transform-origin: center center 0;
 	transform: rotate(60deg) translate(-15px, 0);
@@ -28,6 +30,7 @@ main {
 }
 
 .icon-container:hover :last-child {
+	pointer-events: none;
 	opacity: 0.5;
 	transform-origin: center center 0;
 	transform: rotate(60deg) translate(15px,0);
