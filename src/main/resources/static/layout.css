@@ -20,7 +20,7 @@ header{
 	height: 100vh;
 	float: left;
 	position: fixed;
-	/* border: solid 1px red; */
+	border: solid 1px yellow;
 }
 
 #logo{
@@ -81,24 +81,35 @@ li{
 	opacity: 0.3;
 }
 
+/* ここまでグロナビ */
+
+
 body main{
 	width: 100%;
 	height:2000px;
-	/* border: solid 1px green; */
+	border: solid 1px green;
 }
 
 #main-Wrapper{
 	width: calc(100% - 320px);
 	position: absolute;
 	left: 320px;
-	/* border: solid 1px blue; */
+	border: solid 1px blue;
+}
+
+.main-visual{
+	width: 100%;
 }
 
 .main-visual__title{
-	display: flex;
+	display: inline-block;
 	position: relative;
-	top: 231px;
-	left: 80px;
+	border: solid 1px red;
+}
+
+.main-visual__project{
+	display: inline-block;
+	border: solid 1px orange;
 }
 
 h1{
@@ -110,6 +121,7 @@ h1{
 	text-align: center;
 	position: relative;
 	color: #e8e8e8;
+	border: solid 1px magenta;
 }
 
 h1::after{
@@ -121,6 +133,7 @@ h1::after{
 	position: relative;
 	left: -50%;
 	color: #000;
+	border: solid 1px cyan;
 }
 
 .number{
@@ -145,12 +158,11 @@ h1::after{
 	margin-bottom: 3px;
 }
 
-.main-visual__project{
-	position: relative;
-	top: 250px;
-	left: 290px;
-}
 
 .main-visual__img{
 	margin-top: 10px;
+}
+
+.Whatcrunium {
+	background-color: gray;
 }
