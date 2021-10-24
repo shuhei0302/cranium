@@ -5,18 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>cranium</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-
-	<!-- ここからサイドバー -->
 	<header>
-		<div class="icon-container">
-			<object type="image/svg+xml" data="./logo.svg" width="134" height="auto" id="logo"></object>
+		<div class="icon">
+			<object type="image/svg+xml" data="./logo.svg" width="134" height="auto"></object>
 		</div>
-		<nav id="gnav">
+		<nav class="globalNav">
 			<ul>
-				<li><a href="" class="gnav__a">What</a></li>
+				<li><a href="">What</a></li>
 				<li><a href="">Member</a></li>
 				<li><a href="">Works</a></li>
 				<li><a href="">Contact</a></li>
@@ -26,33 +25,24 @@
 			© 2021 CRANIUM Team
 		</p>
 	</header>
-
-	<!-- ここからメイン -->
-    <main>
-		<div id="main-Wrapper">
-			<div class="Newthings">
-				<div class="main-visual">
-					<div class="main-visual__title">
-						<h1>New  things</h1>
+	<main>
+		<section class="Newthings">
+			<div class="main-visual">
+				<div class="main-visual__title">
+					<h1>New  things</h1>
+				</div>
+				<div class="main-visual__project">
+					<div class="project--info">
+						<p class="number">#001</p>
+						<p class="date">August. 2021</p>
+						<p class="project-information">TOKOROZAWA Medical Care Center : Official WEB Site, Direction/ Design/ Implement</p>
 					</div>
-					<div class="main-visual__project">
-						<div class="project--info">
-							<p class="number">#001</p>
-							<p class="date">August. 2021</p>
-							<p class="project-information">TOKOROZAWA Medical Care Center : Official WEB Site, Direction/ Design/ Implement</p>
-						</div>
-						<img class="main-visual__img" src="./demo-main.png">
-					</div>
+					<img class="main-visual__img" src="./demo-main.png">
 				</div>
 			</div>
-			<div class="Whatcrunium">
-				what crunium
-			</div>
-			<div class="container"></div>
-			<div class="container"></div>
-			<div class="container"></div>
-		</div>
-    </main>
-
+		</section>
+		<section class="Member"></section>
+		<section class="Works"></section>
+	</main>
 </body>
 </html>
