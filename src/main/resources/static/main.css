@@ -15,10 +15,18 @@ a:visited{
 /* HeaderStyle */
 header{
 	width: 16%;
+	min-width: 200px;
 	height: 100vh;
+	padding: 0 1% 0 1%;
+	background-color: gray;
 }
 
 .icon > object{
+	width:134px;
+	height:auto;
+	position: absolute;
+	top: 90px;
+	left: 50px;
 	
 }
 
